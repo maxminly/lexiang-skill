@@ -13,6 +13,8 @@ description: Use for Lexiang knowledge base tasks when the user explicitly menti
 - 配置文件：`mcp.json`
 - 初始化脚本：`setup.sh`
 
+**调用通道**：优先使用当前环境已提供的原生乐享 MCP；若原生不可用，则通过 MCPorter 调用。
+
 **核心原则**：以 MCP 服务返回的最新 schema 为准，按需读取 reference。若当前环境只显示元工具，视为 `preset=meta` 的正常行为。
 
 ## Meta 模式工作流
