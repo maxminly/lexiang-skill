@@ -21,7 +21,7 @@ description: Use for Lexiang knowledge base tasks when the user explicitly menti
 
 1. 判断任务类型：搜索、读取、写入、结构整理、附件上传
 2. 如果任务目标不清楚，先澄清平台、对象和动作（见"任务识别规则"）
-3. 使用 `search_tools` 或 `list_tool_categories` 找到业务工具
+3. 根据用户意图，调用合适的工具。如果有需要，则可以通过 `search_tools` 或 `list_tool_categories` 进行业务工具的查找。
 4. 使用 `get_tool_schema` 获取目标工具的最新参数定义
 5. 使用 `call_tool(tool_name, arguments)` 执行业务工具
 6. 使用 `_mcp_fields` 收窄返回字段，减少噪音
